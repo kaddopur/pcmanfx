@@ -174,7 +174,7 @@ function getValues(recentGroup_) {
 // build Tabs for each site
 function buildTabs(href) {
     var groupNames = [];
-    for(var i=1; i<storage; ++i)
+    for(var i=1; i<storage.length; ++i)
         groupNames.push(storage[i].Name);
     iniTabs(document.getElementById('_0'));
     setValues(0);
